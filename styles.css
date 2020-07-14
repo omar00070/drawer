@@ -75,3 +75,10 @@ canvas{
     height: 100%;
     border: 1px solid rgb(173, 171, 171);
 }
+
+.color-place{
+    background: black;
+    width: 66%;
+    height: 66%;
+    transform: translateX(23%);
+}
