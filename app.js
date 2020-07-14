@@ -52,6 +52,13 @@ document.addEventListener('mousemove', function(e){
     }
 });
 
+document.addEventListener('touchmove', function(e){
+    mouse_position = {
+        x:  e.x,
+        y:  e.y
+    }
+});
+
 pencilSize.addEventListener('click', function(e){
     size = e.target.value
     console.log(size)
