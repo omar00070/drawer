@@ -31,7 +31,6 @@ document.addEventListener('mousedown', function(e){
             x:  e.clientX,
             y:  e.clientY
         }
-        console.log(mouse_position)
         is_drawing = true
     }
 });
@@ -39,9 +38,7 @@ document.addEventListener('mousedown', function(e){
 document.addEventListener('touchstart', function(e){
     if(e.target.tagName == 'CANVAS'){
         is_drawing = true
-        console.log(is_drawing)
     }
-    console.log(e.target.tagName);
 });
 
 document.addEventListener('mouseup', function(){
@@ -64,7 +61,6 @@ document.addEventListener('touchmove', function(e){
         x:  e.touches[0].clientX,
         y:  e.touches[0].clientY
     }
-    console.log(mouse_position)
 });
 
 pencilSize.addEventListener('click', function(e){
@@ -83,7 +79,6 @@ function dropDown(){
     }else{
         dropBox.style.display = 'grid';
     }
-    console.log(dropBox.style.display)
 };
 
 function fillColors(){
