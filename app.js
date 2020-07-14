@@ -65,8 +65,13 @@ document.addEventListener('touchmove', function(e){
 
 pencilSize.addEventListener('click', function(e){
     size = e.target.value
+});
+
+pencilSize.addEventListener('touchstart', function(e){
+    size = e.target.value
     console.log(size)
 });
+
 
 window.addEventListener('resize', function(){
     canvas.width = window.innerWidth;
