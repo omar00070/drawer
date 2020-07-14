@@ -72,6 +72,10 @@ pencilSize.addEventListener('click', function(e){
     console.log(size)
 });
 
+window.addEventListener('resize', function(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight - topBarHeight;
+})
 //functions
 function dropDown(){
     if(dropBox.style.display === 'grid'){
