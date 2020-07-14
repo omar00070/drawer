@@ -37,6 +37,10 @@ document.addEventListener('touchstart', function(e){
     }
 });
 
+document.addEventListener('mouseup', function(){
+    is_drawing = false;
+});
+
 document.addEventListener('touchend', function(){
     is_drawing = false;
 });
