@@ -31,7 +31,13 @@ document.addEventListener('mousedown', function(e){
     }
 });
 
-document.addEventListener('mouseup', function(){
+document.addEventListener('touchstart', function(e){
+    if(e.target.tagName == 'CANVAS'){
+        is_drawing = true
+    }
+});
+
+document.addEventListener('touchend', function(){
     is_drawing = false;
 });
 
